@@ -1,4 +1,15 @@
+[build]
+  base = "/"
+  publish = "/build"
+  command = "yarn build"
+
 [[redirects]]
   from = "/*"
   to = "index.html"
   status = 200
+
+[[headers]]
+  for = "/*"
+
+  [headers.values]
+    X-Robots-Tag = "noindex"
