@@ -1,15 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <List />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { defineComponent } from 'vue'
+import List from './components/List.vue'
 
-export default {
+const App = defineComponent({
   name: 'App',
+
   components: {
-    HelloWorld
+    List
   }
-}
+})
+
+export default App;
 </script>
